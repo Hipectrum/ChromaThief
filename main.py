@@ -31,7 +31,6 @@ def extract_colors(image, num_colors=10):
     return temp_file.name
 
 
-
 @app.route("/", methods=["GET", "POST"])
 def index():
 
@@ -48,7 +47,6 @@ def index():
 @app.route("/uploads/<filename>")
 def uploaded_file(filename):
     return send_file(filename)
-
 
 
 if __name__ == "__main__":
